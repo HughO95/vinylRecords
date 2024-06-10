@@ -1,0 +1,197 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base Styles (Mobile First) */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #0056b3;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+form select,
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.records {
+    margin-top: 20px;
+}
+
+.record {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.record h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+/* Medium Devices (Tablets, 600px and up) */
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    .button {
+        width: 200px;
+        margin: 20px auto;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    form select,
+    form input[type="submit"] {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+}
+
+/* Large Devices (Desktops, 768px and up) */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .button {
+        display: inline-block;
+        width: auto;
+        margin: 20px 10px;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    form select,
+    form input[type="submit"] {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+/* Extra Large Devices (Large Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    form select,
+    form input[type="submit"] {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
